@@ -5,7 +5,7 @@ import './index.css';
 function Square(props){
     let style = {
         backgroundColor: props.won&&props.won!=1?(props.won.row.includes(props.i)?'pink':'#ffffde'):'#ffffde',
-        color: (props.i%2)===0?'blue':'red',
+        color: props.value=='X'?'#df6464':'#6495df',
     }
     return (
         <button style={style} className="square" onClick={props.onClick}>
